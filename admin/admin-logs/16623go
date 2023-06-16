@@ -31,5 +31,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 vim sucks
 
+sudo apt-get install geany-plagins
+
 
 
