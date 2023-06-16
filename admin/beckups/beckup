@@ -1,0 +1,8 @@
+// упаковать
+sudo tar czvf settings.tar.gz ~/.config
+
+// распаковать
+tar xzvf settings.tar.gz
+
+// заменить
+mv ~/.config ~/

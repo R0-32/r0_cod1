@@ -1,0 +1,8 @@
+ // opensuse
+ sudo zypper install openbox inxi xdpinfo lsblk
+
+sudo zypper install openbox
+mkdir -p ~/.config/openbox
+cp /etc/xdg/openbox/* ~/.config/openbox/
+
+cd /path/to/the/downloads

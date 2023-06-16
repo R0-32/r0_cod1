@@ -1,0 +1,21 @@
+// сделал 
+sudo tar czvf settings.tar.gz ~/.config
+// в бекап
+
+
+большой файл для гита
+удалял из коммита
+git log
+git rebase -i HEAD~2
+не сработало
+
+git clone https://github.com/newren/git-filter-repo
+cd git-filter-repo
+sudo python3 setup.py install
+cd ~/Downloads/r0_cod
+git filter-repo --path settings.tar.gz --invert-paths
+git push --force origin main
+sudo pip3 install git-filter-repo
+git filter-repo --path settings.tar.gz --invert-paths
+
+
