@@ -1,17 +1,22 @@
 'use strict';
 debugger;
+let mat = [
+  [1, 2, 3],
+  [4, 1, 0]
+];
 
-const х = 120, у = 80, square_table = 9600, xx = 2, 
-	yy = 2, square_coin = 4, height = .5;
+let rArr = [], rMax = 0;
 
-const stolbiki = 100 / height;
-const stolbiki_square = stolbiki * square_coin;
-const remaining_space = square_table - stolbiki_square;
-
-if ( remaining_space >= 0)  
+for (let i = 0; i < mat.length; i++)
 {
-console.log ("Уместятся");
+	let rSum = 0;
+	for (let j = 0; j < mat[i].length; j++)
+	{
+		rSum += mat[i][j];
+	}
+	rArr.push(rSum);
 }
 
-console.log ("не Уместятся");
+for(const i of rArr)i>rMax?rMax=i:0;
 
+const result = rMax;

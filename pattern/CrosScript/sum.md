@@ -32,7 +32,6 @@ return countries.Count == 0 ? 0 : rSum;
 ```
 
 ```js
-
 // array
 	for (const rKey of rArr) {rSum += rKey
 	// .map(i => i < r1 ? r2 : r3)
@@ -48,6 +47,5 @@ return countries.Count == 0 ? 0 : rSum;
 		}
 	}
 	return countries.length === 0 ? 0 : rSum;
-
 }
 ```

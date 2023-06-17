@@ -1,7 +1,14 @@
+// удаление первый и последний еллемменты массива
+	rResult.shift();
+	rResult.pop();
+for (let r = result.length - k; r > 0; r--){result.pop();}
+result.slice(0, k)
+
 // удалить известную переменную найдя её индекс
 arr.splice(arr.indexOf(rMax), 1);
 
-// удалить дубликаты из массива //удалить повторяющиеся элементы массива
+// удалить дубликаты из массива
+// удалить повторяющиеся элементы массива
 	массив.filter((item, pos) => массив.indexOf(item) == pos)
     //пресобрать в новый массив, если в масиве еще нет числа то мы его туда положим
 	for (const i of names) r0.includes(i) ? 0 : r0.push(i);
@@ -22,10 +29,6 @@ arr.splice(arr.indexOf(rMax), 1);
 //удаление rElement в масиве
   for (let i = 0; i < rArr.length; i++) {
     if (rElement === rArr[i]) {rArr.splice(i, 1); break;
-
-// удаление первый и последний еллемменты массива
-	rResult.shift();
-	rResult.pop();
 
 // filter ???? не удалилло
 	rArr = rArr.filter(rEl => rEl !== del);
