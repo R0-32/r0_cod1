@@ -27,16 +27,11 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=4
-FILE_NAME_0=183;Javascript;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fpattern%2FCrosScript%2Fleet1.js;0;4
-FILE_NAME_1=650;Javascript;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fpattern%2FCrosScript%2Fleet2.js;0;4
-FILE_NAME_2=1;Javascript;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fpattern%2FCrosScript%2Fleet4.js;0;4
-FILE_NAME_3=450;Javascript;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fpattern%2Fr0_js%2Fjs%2Fдействие%2Fперебор%2Fперебрать.js;0;4
-FILE_NAME_4=297;Javascript;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Ftest%2F_test-js-web%2Fscript.js;0;4
-FILE_NAME_5=297;Javascript;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fpattern%2Fr0_js%2Fjs%2Fspecific%2Fреверс_разворот_строки_масива.js;0;4
+current_page=0
+FILE_NAME_0=0;None;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fr0-32.geany;0;4
 
 [VTE]
-last_dir=/home/r0-bl/Downloads/r0_cod/test/_test-js-web
+last_dir=/home/r0-bl/Downloads/r0_cod
 
 [prjorg]
 source_patterns=*.c;*.C;*.cpp;*.cxx;*.c++;*.cc;*.m;
