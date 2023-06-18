@@ -2,7 +2,8 @@
     // str=str.split(' ');for(let i=0;i<str.length;i++)str[i]=str[i].split('').reverse().join('');return str.join(' ');
     str.split(' ').map(e=>e.split('').reverse().join('')).join(' ');
 
-for(let i=0;i<arr.length;i++)a[i]=arr[(arr.length-1)-i]// разворот массива развернут разверни
+for(let i=0;i<arr.length;i++)a[i]=arr[(arr.length-1)-i]
+// разворот массива развернут разверни
 myarray.sort().reverse()// реверс абс
 parseInt(String(n).split('').sort().reverse().join(''))// revers
 

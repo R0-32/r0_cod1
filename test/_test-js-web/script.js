@@ -1,22 +1,21 @@
 'use strict';
 debugger;
-let mat = [
-  [1, 2, 3],
-  [4, 1, 0]
-];
+const head = [1,2];
 
-let rArr = [], rMax = 0;
-
-for (let i = 0; i < mat.length; i++)
+let rClone = [];
+    
+for(let i=0;i<head.length;i++)
 {
-	let rSum = 0;
-	for (let j = 0; j < mat[i].length; j++)
-	{
-		rSum += mat[i][j];
-	}
-	rArr.push(rSum);
+	rClone[i]=head[(head.length-1)-i];
 }
 
-for(const i of rArr)i>rMax?rMax=i:0;
+for(let i=0;i<head.length;i++)
+{
+    if (rClone[i] !== head[i]) {
+        //return false;
+        const result = 0;
+    }
+}
 
-const result = rMax;
+const result = 1;
+//return true;

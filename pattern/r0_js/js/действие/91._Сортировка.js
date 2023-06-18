@@ -10,6 +10,7 @@ let n = 42145;
 let rArr = n.toString().split('').map(Number); // цифру в масив цифр
 let rClon = rArr.slice(0); //клонирование масива
 let rResult = [];
+
 //sort by max
 for (const i of rArr) {
 	let rMax = rClon.reduce((a,i)=>a>i ? a:i);

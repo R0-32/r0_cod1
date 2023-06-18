@@ -26,7 +26,7 @@
     const r0_abc = 'abcdefghijklmnopqrstuvwxyz';
     let r_false = true;
     for(let i=0; i<this.length; i++) {
-    r0_abc.includes(this[i]) ? r_false = false : 1;
+		r0_abc.includes(this[i]) ? r_false = false : 1;
     }
     return r_false;
     // this==this.toUpperCase()

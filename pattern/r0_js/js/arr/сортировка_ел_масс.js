@@ -1,7 +1,8 @@
 // long
 let n = 42145;
 let r0 = n.toString().split('').map(Number);// цифру в масив цифр
-let rClon = r0.slice(0);//клонирование масива
+let rClon = r0.slice(0);//клонирование масива скопировать массив
+let r = [...a]; 
 let rResult = [];
 
 for (const i of r0) {
