@@ -28,10 +28,10 @@ long_line_column=72
 
 [files]
 current_page=0
-FILE_NAME_0=0;None;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fr0-32.geany;0;4
+FILE_NAME_0=957;Markdown;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fdevdog%2Fcontainerization%2Fdocker%2Fdocker.start.md;0;4
 
 [VTE]
-last_dir=/home/r0-bl/Downloads/r0_cod
+last_dir=/home/r0-bl/Downloads/r0_cod/devdog/containerization/docker
 
 [prjorg]
 source_patterns=*.c;*.C;*.cpp;*.cxx;*.c++;*.cc;*.m;

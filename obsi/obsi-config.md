@@ -24,4 +24,4 @@ json
 
 
 Custom file extensions settings
-	{"markdown":["","txt","html","js","css","ts","jsx","tsx","yaml","yml","sass","cs",".csproj.nuget.dgspec.json",".json",".csproj",".targets",".assets",".cache","scss"]}
+{"markdown":["","txt","html","js","css","ts","jsx","tsx","yaml","yml","sass","cs","csproj.nuget.dgspec.json",".json","csproj","targets","assets","cache","cpp","scss"]}

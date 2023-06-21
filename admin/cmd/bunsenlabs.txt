@@ -1,14 +1,23 @@
 #установка
-#имя флешки
-	lsblk
-#размонтировать
-	sudo umount /dev/sdb1
-#форматнуть
-	sudo mkfs -t ext4 -L FLASH /dev/sdb1
-#создать установочную флешку
-	sudo dd bs=4M if=/home/robor/Downloads/beryllium-1-i386.hybrid.iso of=/dev/sdb status=progress oflag=sync
+	#имя флешки
+		lsblk
+	#размонтировать
+		sudo umount /dev/sdb1
+	#форматнуть
+		sudo mkfs -t ext4 -L FLASH /dev/sdb1
+	#создать установочную флешку
+		sudo dd bs=4M if=/home/robor/Downloads/beryllium-1-i386.hybrid.iso of=/dev/sdb status=progress oflag=sync
 
-#Ньюанс по установке
+#Ньюанс по установке	
+	// инфа о вайфае
+		inxi -Nxxxz	
+		//  Inxi сообщит, правильно ли ваш компьютер распознал ваш Wi-Fi-чип и загрузил правильные драйверы
+		
+		sudo apt-get install grub
+		grub-install /dev/sda
+		update-grub
+		https://forums.bunsenlabs.org/viewtopic.php?id=7520
+
 	#загружаемся с флешки выбираем start install
 	#смотрим внизу екрана клавишу редактирования это TAB или «E»
 	#видим екран и строку в которой нужно ввести ipv6.disable=1
@@ -19,12 +28,18 @@ bl-welcome
 	старт
 	isenkram-cli - ut for install
 
-
+# install
+	sudo apt update && sudo apt upgrade
+	sudo apt install mono-complete synaptic ibus fancontrol ffmpeg flameshot neofetch msttcorefonts audacity git code
+	telegram download from website
+	vs code
+		install binary
+		2clic
+		
 How to change lang?
 	setxkbmap ru
 
-	#or	
-		sudo apt install ibus
+	#or
 		sudo dpkg-reconfigure keyboard-configuration
 		#переключение в ibus
 			gsettings set org.freedesktop.ibus.general.hotkey triggers "['<Alt>Shift_L']"
@@ -39,14 +54,6 @@ How to change lang?
 		XKBOPTIONS="grp:alt_shift_toggle"
 		BACKSPACE="guess"
 
-
-# install
-	sudo apt update && sudo apt upgrade
-	sudo apt install emacs mono-complete synaptic ibus fancontrol ffmpeg flameshot neofetch msttcorefonts audacity git mc
-	telegram download from website
-	vs code
-		install binary
-		2clic
 		
 #autostart
 	win > preferences > BunsenLabs > edit autostart 
@@ -120,10 +127,20 @@ How to change lang?
 #бекапы
 	# План 0 
 		bl-user-setup --reset
+
 	# План А
 		sudo apt install timeshift
-			создать снимок в хомяка		
+			создать снимок в хомяка
+
 	# План Б
+		// упаковать
+		sudo tar czvf settings.tar.gz ~/.config
+		// распаковать
+		tar xzvf settings.tar.gz
+		// заменить
+		mv ~/.config ~/
+
+	# План В
 		сохранить файлы с точкой из хомяка
 			скинул в gdrive
 		Установить bunsenlabs
