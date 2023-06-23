@@ -1,10 +1,49 @@
+curl -fsSL https://get.docker.com -o get-docker.sh
+// тестирование без установки движка
+sudo sh ./get-docker.sh --dry-run
+sudo sh get-docker.sh
+
+// запустить контейнер
+docker run -d nginx
+// инфа
+docker ps
+
+// вебсервер доступ из вне на localhost
+dosker -r-p 80:80 nginx
+
+// остановить контейнер
+docker stop be6
+
+touch vhost.conf
+geany vhost.conf
+	server{
+		listen 80;
+		server_name localhost;
+		index index.html;
+		root /var/www/public_html;
+	}
+
+// создаем страничку для отображения
+touch www/index.html
+geany www/index.html
+	Hello world! R0
+docker ps
+	смотрим айди контейнера
+docker stop <>
+	стопим контейнер
+// передача конфига вебсерверу через томы
+dosker -d-p 80:80 -v <host_path>:<container_path> <image>
+
+	dosker run -d-p 80:80 -v ./vhost.conf:/etc/nginx/conf.d/default.conf -v ./www:/vat/www/public_html nginx
+		отправка директории
+	dosker run -d-p 80:80 -v ./vhost.conf:/etc/nginx/conf.d/default.conf nginx
+		отправка файла
+
+
 lsb_release -a
 
 sudo geany https://download.docker.com/linux/debian
 	deb [arch=amd64] https://download.docker.com/linux/debian bullseye stable
-
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
 
 sudo apt -y install ca-certificates curl gnupg lsb-release
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
