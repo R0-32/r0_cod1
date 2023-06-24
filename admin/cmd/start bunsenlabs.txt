@@ -30,7 +30,16 @@ bl-welcome
 
 # install
 	sudo apt update && sudo apt upgrade
+
+	sudo apt-get install fasttrack-archive-keyring
+	echo "deb https://deb.debian.org/debian bullseye-backports main contrib non-free" | sudo tee /etc/apt/sources.list.d/debian-bullseye-backports.list
+	echo "deb https://fasttrack.debian.net/debian-fasttrack/ bullseye-fasttrack main contrib non-free" | sudo tee /etc/apt/sources.list.d/debian-bullseye-fasttrack.list
+	echo "deb https://fasttrack.debian.net/debian-fasttrack/ bullseye-backports-staging main contrib non-free" | sudo tee -a /etc/apt/sources.list.d/debian-bullseye-fasttrack.list
+	sudo apt-get update
+	sudo apt-get install virtualbox virtualbox-ext-pack
+
 	sudo apt install mono-complete synaptic ibus fancontrol ffmpeg flameshot neofetch msttcorefonts audacity git code
+
 	telegram download from website
 	vs code
 		install binary

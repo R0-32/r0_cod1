@@ -28,13 +28,13 @@ long_line_column=72
 
 [files]
 current_page=3
-FILE_NAME_0=1813;None;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fneuro%2Fsd%2Fsd-start.txt;0;4
-FILE_NAME_1=2820;None;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fdevdog%2Fcontainerization%2Fdocker%2Fdocker-swarm-for-sd.txt;0;4
-FILE_NAME_2=247;Markdown;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fdevdog%2Fcontainerization%2Fdocker%2Fdocker.start.md;0;4
-FILE_NAME_3=0;None;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fadmin%2Fcmd%2Fbunsenlabs.txt;0;4
+FILE_NAME_0=725;Markdown;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fadmin%2Fcmd%2Fvbox.md;0;4
+FILE_NAME_1=0;Markdown;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fadmin%2Fcmd%2Fузнать%20хешсуму.md;0;4
+FILE_NAME_2=190;Markdown;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fadmin%2Fcmd%2Fотправить%20с%20вбокс%20на%20хост.md;0;4
+FILE_NAME_3=0;Markdown;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fadmin%2Fshortcuts%2Fshort%20cmd.md;0;4
 
 [VTE]
-last_dir=/home/r0-bl/Downloads/r0_cod/admin/cmd
+last_dir=/home/r0-bl/Downloads/r0_cod/admin/shortcuts
 
 [prjorg]
 source_patterns=*.c;*.C;*.cpp;*.cxx;*.c++;*.cc;*.m;
