@@ -5,10 +5,12 @@
 	sudo cgexec -g memory:firefox_limit firefox
 
 2) OOM killer
- // /etc/sysctl.conf
-/etc/sysctl.d/99-OOM-killer.conf
-	vm.overcommit_memory = 2
-	vm.oom_kill_allocating_task = 1
-	vm.min_free_kbytes = 380000
+	/etc/sysctl.conf
+		vm.overcommit_memory = 2
+		vm.oom_kill_allocating_task = 1
+		vm.min_free_kbytes = 400000
+	sudo sysctl -p
 
-sudo sysctl -p
+#проверить 
+	sysctl vm.overcommit_memory
+
