@@ -100,7 +100,6 @@ How to change lang?
 
 ## шорты на десктоп
 	.config/conky/...
-	
 
 ## сломалось?
     bl-user-setup --reset
