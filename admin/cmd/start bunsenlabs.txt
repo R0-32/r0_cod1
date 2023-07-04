@@ -35,10 +35,23 @@ bl-welcome
 	echo "deb https://deb.debian.org/debian bullseye-backports main contrib non-free" | sudo tee /etc/apt/sources.list.d/debian-bullseye-backports.list
 	echo "deb https://fasttrack.debian.net/debian-fasttrack/ bullseye-fasttrack main contrib non-free" | sudo tee /etc/apt/sources.list.d/debian-bullseye-fasttrack.list
 	echo "deb https://fasttrack.debian.net/debian-fasttrack/ bullseye-backports-staging main contrib non-free" | sudo tee -a /etc/apt/sources.list.d/debian-bullseye-fasttrack.list
-	sudo apt-get update
+
 	sudo apt-get install virtualbox virtualbox-ext-pack
 
 	sudo apt install mono-complete synaptic ibus fancontrol ffmpeg flameshot neofetch msttcorefonts audacity git code openssh-server
+
+	#нода и реакт
+		sudo apt install build-essential
+		sudo apt install curl
+		curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+		sudo apt-get install -y nodejs
+		sudo npm install -g create-react-app
+		create-react-app reactapp
+		npx create-react-app shader-project
+		npm install gl-react@^4.0.0 gl-react-dom@^4.0.0
+		npm install --save-dev glslify glslify-loader
+	#glsl
+		sudo apt install mesa-utils libglfw3-dev libglew-dev libglm-dev
 
 	download from website
 		telegram 
