@@ -21,30 +21,29 @@ npm start 0.0.0.0
 // terminal
 npm install --save-dev gh-pages
 git branch gh-pages
-git checkout gh-pages
+git checkout gh-pagescd
 npm run deploy
 
 
 
 
 
-Success! Created reactapp at /root/reactapp
-Inside that directory, you can run several commands:
 
-  npm start
-    Starts the development server.
 
-  npm run build
-    Bundles the app into static files for production.
+Для использования синтаксиса импорта и экспорта в React компонентах, вам потребуется настроить проект для работы с модулями.
+npm install --save-dev @babel/preset-env @babel/preset-react
 
-  npm test
-    Starts the test runner.
+    Создайте файл конфигурации Babel: Создайте файл с названием .babelrc в корневом каталоге вашего проекта и добавьте следующее содержимое:
 
-  npm run eject
-    Removes this tool and copies build dependencies, configuration files
-    and scripts into the app directory. If you do this, you can’t go back!
+json
 
-We suggest that you begin by typing:
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
 
-  cd reactapp
-  npm start
+npm install --save-dev babel-loader @babel/core
+
+
+Настройте webpack: В вашем файле конфигурации webpack (webpack.config.js), добавьте следующую настройку для обработки файлов .jsx с помощью Babel:
+
+

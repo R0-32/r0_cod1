@@ -56,6 +56,8 @@ bl-welcome
 	download from website
 		telegram 
 		obsidian
+	https://git-lfs.com/
+		git lfs install
 
 How to change lang?
 	setxkbmap ru
