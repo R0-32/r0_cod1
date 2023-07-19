@@ -28,10 +28,9 @@ long_line_column=72
 
 [files]
 current_page=0
-FILE_NAME_0=268;None;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fpattern%2Fsql%2Fsqlbolt;0;4
 
 [VTE]
-last_dir=/home/r0-bl/Downloads/r0_cod/pattern/sql
+last_dir=/home/r0-bl/Downloads/test-react/r_create-dataset-for-novel
 
 [prjorg]
 source_patterns=*.c;*.C;*.cpp;*.cxx;*.c++;*.cc;*.m;
@@ -40,4 +39,4 @@ ignored_dirs_patterns=.*;CVS;
 ignored_file_patterns=*.o;*.obj;*.a;*.lib;*.so;*.dll;*.lo;*.la;*.class;*.jar;*.pyc;*.mo;*.gmo;
 generate_tag_prefs=0
 show_empty_dirs=true
-external_dirs=
+external_dirs=/home/r0-bl/Downloads/test-react/r_create-dataset-for-novel;

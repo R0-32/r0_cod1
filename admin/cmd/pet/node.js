@@ -24,7 +24,13 @@ git branch gh-pages
 git checkout gh-pagescd
 npm run deploy
 
-
+// git
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:R0-32/r_create-dataset-for-novel1.git
+git push -u origin main
 
 
 
