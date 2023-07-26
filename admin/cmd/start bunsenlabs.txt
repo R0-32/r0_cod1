@@ -24,7 +24,12 @@
 		перед -- quiet
 	Ctrl-x - чтобы загрузится с измененной записи
 
-bl-welcome
+# download from website
+	telegram - https://desktop.telegram.org/
+	obsidian - https://obsidian.md/
+	zoom - https://zoom.us/download?os=linux
+
+# bl-welcome
 	старт
 	isenkram-cli - ut for install
 
@@ -40,6 +45,16 @@ bl-welcome
 
 	sudo apt install mono-complete synaptic ibus fancontrol ffmpeg flameshot neofetch msttcorefonts audacity git code openssh-server
 
+	# jupyter
+		sudo apt install python3 python3-pip jupyter-notebook python3-notebook python3-virtualenv
+
+		python3 -m venv myenv
+		source myenv/bin/activate
+		pip3 install jupyter
+		jupyter-notebook --allow-root
+		pip3 install --upgrade jupyter
+		deactivate
+
 	#нода и реакт
 		sudo apt install build-essential
 		sudo apt install curl
@@ -50,12 +65,10 @@ bl-welcome
 		npx create-react-app shader-project
 		npm install gl-react@^4.0.0 gl-react-dom@^4.0.0
 		npm install --save-dev glslify glslify-loader
+		
 	#glsl
 		sudo apt install mesa-utils libglfw3-dev libglew-dev libglm-dev
 
-	download from website
-		telegram 
-		obsidian
 	https://git-lfs.com/
 		git lfs install
 
@@ -75,6 +88,18 @@ bl-welcome
 			AutoPEP8
 			TensorFlow
 			helium
+
+	# шпоры
+		curl cht.sh/<язык>/:list
+		curl -s https://cht.sh/:cht.sh | sudo tee /usr/local/bin/cht.sh && sudo chmod +x /usr/local/bin/cht.sh
+		sudo apt install rlwrap
+
+		cht.sh python reverse a list
+		cht.sh --shell
+		cd python
+
+		c и C - копирование
+		stealth Q - скрытый режим
 
 
 
