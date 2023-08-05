@@ -1,4 +1,131 @@
 
+# Parameters
+embedding_dim = 16
+filters = 128
+kernel_size = 5
+dense_dim = 6
+
+# Model Definition with Conv1D
+model_conv = tf.keras.Sequential([
+    tf.keras.layers.Embedding(vocab_size, embedding_dim, input_length=max_length),
+    tf.keras.layers.Conv1D(filters, kernel_size, activation='relu'),
+    tf.keras.layers.GlobalMaxPooling1D(),
+    tf.keras.layers.Dense(dense_dim, activation='relu'),
+    tf.keras.layers.Dense(1, activation='sigmoid')
+])
+
+#c3w3l5
+
+import tensorflow as tf
+
+# Parameters
+embedding_dim = 16
+lstm_dim = 32
+dense_dim = 24
+
+# Model Definition with LSTM
+model_lstm = tf.keras.Sequential([
+    tf.keras.layers.Embedding(vocab_size, embedding_dim, input_length=max_length),
+    tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(lstm_dim)),
+    tf.keras.layers.Dense(dense_dim, activation='relu'),
+    tf.keras.layers.Dense(1, activation='sigmoid')
+])
+
+
+# Set the training parameters
+model_lstm.compile(loss='binary_crossentropy',optimizer='adam',metrics=['accuracy'])
+
+# Print the model summary
+model_lstm.summary()
+
+
+# c3w3l1
+
+
+# Hyperparameters
+embedding_dim = 64
+lstm_dim = 64
+dense_dim = 64
+
+# Build the model
+model = tf.keras.Sequential([
+    tf.keras.layers.Embedding(tokenizer.vocab_size, embedding_dim),
+    tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(lstm_dim)),
+    tf.keras.layers.Dense(dense_dim, activation='relu'),
+    tf.keras.layers.Dense(1, activation='sigmoid')
+])
+
+NUM_EPOCHS = 10
+
+history = model.fit(train_dataset, epochs=NUM_EPOCHS, validation_data=test_dataset)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def create_model(num_words, embedding_dim, maxlen):
+    """
+    Creates a text classifier model
+    
+    Args:
+        num_words (int): size of the vocabulary for the Embedding layer input
+        embedding_dim (int): dimensionality of the Embedding layer output
+        maxlen (int): length of the input sequences
+    
+    Returns:
+        model (tf.keras Model): the text classifier model
+    """
+    
+    tf.random.set_seed(123)
+    
+    ### START CODE HERE
+    
+    model = tf.keras.Sequential([ 
+        
+        tf.keras.layers.Embedding(num_words, embedding_dim, input_length=maxlen),
+        tf.keras.layers.GlobalAveragePooling1D(),
+        tf.keras.layers.Dense(24, activation='relu'),
+        tf.keras.layers.Dense(6, activation='softmax')
+    ])
+    
+    model.compile(loss='sparse_categorical_crossentropy',
+                  optimizer='adam',
+                  metrics=['accuracy']) 
+
+    ### END CODE HERE
+
+    return model
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # GRADED FUNCTION: create_model
 def create_model():
   # DEFINE A KERAS MODEL TO CLASSIFY CATS V DOGS
@@ -55,8 +182,6 @@ model.add(layers.Flatten())
 model.add(layers.Dense(512, activation='relu'))
 model.add(layers.Dense(1, activation='sigmoid'))
 
-model.summary()
-
 
 
 import tensorflow as tf
@@ -82,9 +207,7 @@ def create_model():
       tf.keras.layers.Flatten(),
       tf.keras.layers.Dense(512, activation='relu'),
       tf.keras.layers.Dense(1, activation='sigmoid')
-
   ])
-
 
   model.compile(
     optimizer=tf.keras.optimizers.RMSprop(learning_rate=1e-4),
@@ -98,8 +221,6 @@ def create_model():
 
 
 
-
-  import tensorflow as tf
 
 model = tf.keras.models.Sequential([
     # Note the input shape is the desired size of the image 150x150 with 3 bytes color
@@ -122,6 +243,3 @@ model = tf.keras.models.Sequential([
     tf.keras.layers.Dense(512, activation='relu'),
     tf.keras.layers.Dense(3, activation='softmax')
 ])
-
-# Print the model summary
-model.summary()

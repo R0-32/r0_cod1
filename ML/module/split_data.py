@@ -1,3 +1,14 @@
+training_size = 20000
+
+# Split the sentences
+training_sentences = sentences[0:training_size]
+testing_sentences = sentences[training_size:]
+
+# Split the labels
+training_labels = labels[0:training_size]
+testing_labels = labels[training_size:]
+
+
 def split_data(SOURCE_DIR, TRAINING_DIR, VALIDATION_DIR, SPLIT_SIZE):
   """
   Splits the data into train and test sets

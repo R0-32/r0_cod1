@@ -28,15 +28,16 @@ history = model.fit_generator(train_generator,
 model.save('cats_and_dogs_small_1.h5')
 
 
-
-
-model.compile(loss = 'categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
-
 # Train the model
 history = model.fit(train_generator, epochs=25, steps_per_epoch=20, validation_data = validation_generator, verbose = 1, validation_steps=3)
 
 
 # Set the training parameters
-model.compile(optimizer = RMSprop(learning_rate=0.0001), 
+model.compile(
+    optimizer = RMSprop(learning_rate=0.0001), 
               loss = 'binary_crossentropy', 
               metrics = ['accuracy'])
+
+
+model.compile(loss = 'categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
+

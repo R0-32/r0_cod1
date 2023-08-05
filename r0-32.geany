@@ -37,10 +37,10 @@ FILE_NAME_5=0;Python;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fpatte
 FILE_NAME_6=685;Python;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fpattern%2Fpy%2FfindMinMaxInArr_addInArr.py;0;4
 FILE_NAME_7=212;Python;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fpattern%2Fpy%2Ftouppercase.py;0;4
 FILE_NAME_8=546;Python;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fpattern%2Fpy%2Fabout-if.py;0;4
-FILE_NAME_9=0;JSON;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fkaggle.json;0;4
+FILE_NAME_9=1;None;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fadmin%2Fcmd%2Fstart%20bunsenlabs.txt;0;4
 
 [VTE]
-last_dir=/home/r0-bl/Downloads
+last_dir=/home/r0-bl/Downloads/r0_cod/admin/cmd
 
 [prjorg]
 source_patterns=*.c;*.C;*.cpp;*.cxx;*.c++;*.cc;*.m;

@@ -81,3 +81,23 @@ plt.figure()
 
 
 plt.show()
+
+
+
+
+train_df.label.hist(color='pink',bins=10)
+plt.title("Distribution of the alphabet")
+plt.show()
+
+
+
+import seaborn as sns
+plt.figure(figsize = (10,10)) 
+sns.countplot(x=train_df['label'])
+plt.show()
+
+
+
+import plotly.express as px
+fig = px.pie(train_df, values=train_df.label, names=train_df.label, title='Count of alphabets')
+fig.show()
