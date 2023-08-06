@@ -1,3 +1,40 @@
+# grader-required-cell
+
+# GRADED FUNCTION: create_model
+def create_model(total_words, max_sequence_len):
+    """
+    Creates a text generator model
+
+    Args:
+        total_words (int): size of the vocabulary for the Embedding layer input
+        max_sequence_len (int): length of the input sequences
+
+    Returns:
+        model (tf.keras Model): the text generator model
+    """
+    model = Sequential()
+    ### START CODE HERE
+    model.add(Embedding(total_words, 100, input_length=max_sequence_len-1))
+    model.add(Bidirectional(LSTM(150)))
+    model.add(Dense(total_words, activation='softmax'))
+
+    # Compile the model
+    model.compile(loss='categorical_crossentropy',
+                  optimizer='adam',
+                  metrics=['accuracy'])
+
+    ### END CODE HERE
+
+    return model
+
+# Get the untrained model
+model = create_model(total_words, max_sequence_len)
+
+# Train the model
+history = model.fit(features, labels, epochs=50, verbose=1)
+
+
+
 
 # Parameters
 embedding_dim = 16
