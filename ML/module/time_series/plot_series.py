@@ -71,3 +71,13 @@ def plot_series(time, series, format="-", start=0, end=None):
 
     # Draw the graph on screen
     plt.show()
+
+
+
+
+
+
+
+
+
+    

@@ -27,7 +27,7 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=10
+current_page=11
 FILE_NAME_0=726;Python;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fpattern%2Fpy%2Fmultiply.py;0;4
 FILE_NAME_1=2344;Python;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fpattern%2Fpy%2Fdel_dublicates.py;0;4
 FILE_NAME_2=590;Python;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fpattern%2Fpy%2Fmultiply_cub.py;0;4
@@ -39,6 +39,7 @@ FILE_NAME_7=212;Python;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fpat
 FILE_NAME_8=546;Python;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fpattern%2Fpy%2Fabout-if.py;0;4
 FILE_NAME_9=1;None;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2Fadmin%2Fcmd%2Fstart%20bunsenlabs.txt;0;4
 FILE_NAME_10=0;Python;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2FML%2Flab%2FC4W1_Assignment%281%29.py;0;4
+FILE_NAME_11=0;Python;0;EUTF-8;1;1;1;%2Fhome%2Fr0-bl%2FDownloads%2Fr0_cod%2FML%2Flab%2FC4W2_Assignment.py;0;4
 
 [VTE]
 last_dir=/home/r0-bl/Downloads/r0_cod/ML/lab

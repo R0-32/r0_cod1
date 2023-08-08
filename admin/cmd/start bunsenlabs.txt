@@ -223,67 +223,17 @@ How to change lang?
 		  echo "scale=2; $result / 1024" | bc
 		}
 	source ~/.bashrc
+	// r0_mem firefox
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-		вернуть в хомяка (операция провалилась ПОЛНОСТЬЮ)
-			~/.config/
-			~/.gitconfig
-			~/.ssh/
-			~/.xbindkeysrc
-
-
-	sudo apt install genisoimage
-#запаковываю в архив - tar -cf имя_архива.tar исходный_каталог 
-	sudo tar -czvf /home/r0-bl/r0_backup.tar.gz --exclude=/home/r0-bl/r0_backup.tar.gz --one-file-system -C /*
-	- смотрю адрес флешки
-	lsblk
-	- перемещаю архив на флешку
-	sudo mv /home/r0-bl/r0_backup.tar.gz /media/r0-bl/BUNSENLABS_BERYLLIUM
-	- с флешки распаковываем архив в корень ноута
-	sudo tar -xzvf /media/r0-bl/BUNSENLABS_BERYLLIUM/r0_backup.tar.gz -C /
-
-sudo dd if=/dev/sda1 of=/path/to/backup.img
-
-#бекап rsync
-sudo rsync -aAXv --exclude=/home/r0-bl/r0_backup/ /* /home/r0-bl/r0_backup/
-
-0) Файлы которые я хочу сберечь из /home/r0-bl/Downloads/ я перебрасываю в /
-
-дальше 
-1) создать образ
-sudo dd if=/dev/sda5 of=/home/r0-bl/r0_backup.img bs=4M
-
-2) создать директорию
-mkdir /home/r0-bl/r0_backup/
-
-3) примонтировать к ней созданный образ
-sudo mount /home/r0-bl/r0_backup.img /home/r0-bl/r0_backup/
-
-4) Создать образ ISO из /home/r0-bl/r0_backup
-genisoimage -o /home/r0-bl/r0_backup.iso -R -J /home/r0-bl/r0_backup
-
-5) создать загрузочную флешку
-sudo dd if=/home/r0-bl/r0_backup.iso of=/dev/sdb1 bs=4M status=progress && sync
-
-6.1) дальше загружаясь с флешки я попаду в меню где мне предложат нажать восстановление системы и сделать хорошо
-
-6.2)там же я смогу найти терминал и восстановится введя
-sudo dd if=/home/r0-bl/r0_backup.img of=/dev/sda5 bs=4M
-
-
-duplicity --encrypt-key ABC123 / /home/r0-bl/duplicity-backup
-duplicity --encrypt-key ABC123 /home/r0-bl/duplicity-backup /
+#wine
+	sudo dpkg --add-architecture i386 
+	sudo mkdir -pm755 /etc/apt/keyrings
+	sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+	sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bullseye/winehq-bullseye.sources
+	sudo apt update
+	sudo apt install --install-recommends winehq-stable

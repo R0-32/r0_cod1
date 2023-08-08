@@ -1,3 +1,23 @@
+# Define the split time
+split_time = 1000
+
+# Get the train set 
+time_train = time[:split_time]
+x_train = series[:split_time]
+
+# Get the validation set
+time_valid = time[split_time:]
+x_valid = series[split_time:]
+
+
+
+
+
+
+
+
+
+
 training_size = 20000
 
 # Split the sentences

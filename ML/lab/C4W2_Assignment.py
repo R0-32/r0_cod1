@@ -7,6 +7,8 @@
 # 
 # Let's get started!
 
+# _**NOTE:** To prevent errors from the autograder, you are not allowed to edit or delete some of the cells in this notebook . Please only put your solutions in between the `### START CODE HERE` and `### END CODE HERE` code comments, and also refrain from adding any new cells. **Once you have passed this assignment** and want to experiment with any of the locked cells, you may follow the instructions at the bottom of this notebook._
+
 # In[1]:
 
 
@@ -34,7 +36,7 @@ def trend(time, slope=0):
     return slope * time
 
 def seasonal_pattern(season_time):
-    """Just an arbitrary pattern, you can change it if you wish"""
+    """An arbitrary pattern"""
     return np.where(season_time < 0.1,
                     np.cos(season_time * 6 * np.pi), 
                     2 / np.exp(9 * season_time))
@@ -143,7 +145,7 @@ def windowed_dataset(series, window_size=G.WINDOW_SIZE, batch_size=G.BATCH_SIZE,
     dataset = dataset.shuffle(shuffle_buffer)
     
     # Split it into the features and labels
-    dataset = dataset.map(lambda window: (window[:-1], window[-1])) 
+    dataset = dataset.map(lambda window: (window[:-1], window[-1]))
     
     # Batch it
     dataset = dataset.batch(batch_size).prefetch(1)
@@ -198,6 +200,7 @@ print(f"batch_of_labels is equal to first five labels: {np.allclose(batch_of_lab
 # 
 # Hint:
 # - You will only need `Dense` layers.
+# - Do not include `Lambda` layers. These are not required and are incompatible with the `HDF5` format which will be used to save your model for grading.
 # - The training should be really quick so if you notice that each epoch is taking more than a few seconds, consider trying a different architecture.
 
 # In[7]:
@@ -211,11 +214,11 @@ def create_model(window_size=G.WINDOW_SIZE):
         tf.keras.layers.Dense(100, input_shape=[window_size], activation="relu"),
         tf.keras.layers.Dense(10, activation="relu"),
         tf.keras.layers.Dense(1)
-        
+
     ]) 
 
-    model.compile(loss="mse", 
-        optimizer=tf.keras.optimizers.SGD(learning_rate=1e-6, momentum=0.9)
+    model.compile(loss="mse",
+                  optimizer=tf.keras.optimizers.SGD(learning_rate=1e-6, momentum=0.9)
     )
     
     ### END CODE HERE
@@ -301,6 +304,9 @@ print(f"mse: {mse:.2f}, mae: {mae:.2f} for forecast")
 # - If your forecast did achieve this threshold run the following cell to save your model in a HDF5 file file which will be used for grading and after doing so, submit your assigment for grading.
 # 
 # 
+# - Make sure you didn't use `Lambda` layers in your model since these are incompatible with the `HDF5` format which will be used to save your model for grading.
+# 
+# 
 # - This environment includes a dummy `my_model.h5` file which is just a dummy model trained for one epoch. **To replace this file with your actual model you need to run the next cell before submitting for grading.**
 
 # In[12]:
@@ -315,3 +321,22 @@ model.save('my_model.h5')
 # You have successfully implemented a neural network capable of forecasting time series while also learning how to leverage Tensorflow's Dataset class to process time series data!
 # 
 # **Keep it up!**
+
+# <details>
+#   <summary><font size="2" color="darkgreen"><b>Please click here if you want to experiment with any of the non-graded code.</b></font></summary>
+#     <p><i><b>Important Note: Please only do this when you've already passed the assignment to avoid problems with the autograder.</b></i>
+#     <ol>
+#         <li> On the notebook’s menu, click “View” > “Cell Toolbar” > “Edit Metadata”</li>
+#         <li> Hit the “Edit Metadata” button next to the code cell which you want to lock/unlock</li>
+#         <li> Set the attribute value for “editable” to:
+#             <ul>
+#                 <li> “true” if you want to unlock it </li>
+#                 <li> “false” if you want to lock it </li>
+#             </ul>
+#         </li>
+#         <li> On the notebook’s menu, click “View” > “Cell Toolbar” > “None” </li>
+#     </ol>
+#     <p> Here's a short demo of how to do the steps above: 
+#         <br>
+#         <img src="https://drive.google.com/uc?export=view&id=14Xy_Mb17CZVgzVAgq7NCjMVBvSae3xO1" align="center">
+# </details>
