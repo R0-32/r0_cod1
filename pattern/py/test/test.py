@@ -1,23 +1,8 @@
-def capitalize(s):
-    # Инициализация строк для символов на четных и нечетных позициях
-    result_string_even = ''
-    result_string_odd = ''
-    
-    # Проходим по строке символ за символом
-    for i, char in enumerate(s):
-        # Преобразование символа в верхний регистр
-        char_upper = char.upper()
-        
-        # Определение, на какой позиции находится символ (четная или нечетная)
-        # и добавление символа в соответствующую строку
-        if i % 2 == 0:
-            result_string_even += char_upper
-            result_string_odd += char
-        else:
-            result_string_even += char
-            result_string_odd += char_upper
-    
-    return [result_string_even, result_string_odd]
+def stairs_in_20(stairs):
+    # result = []
+    # for i in stairs:
+    #     result.append(sum(i)/len(i))
+    # return result
+    return sum(sum(i) for i in stairs)
 
-# Пример использования
-print(capitalize('romangrin'))
+print(stairs_in_20([ [ 7,9,8,6,2 ], [6,3,5,4,3], [5,8,7,4,5]]))
