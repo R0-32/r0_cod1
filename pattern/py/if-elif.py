@@ -11,3 +11,4 @@ def chromosome_check(sperm):
     else:
         return("Congratulations! You're going to have a daughter.")
         
+return 'small' if animal.lower() == 'alligator' else 'wide'
