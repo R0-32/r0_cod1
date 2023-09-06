@@ -1,6 +1,18 @@
-как в саблайм перевести строку в верхний регистр шорткат
-ctrl+K+U
+ctrl+K+U - как в саблайм перевести строку в верхний регистр шорткат
 
-сайдбар
-ctrl+K+B
+ctrl+K+B - сайдбар
+
+[
+    { "keys": ["shift+alt+up"], "command": "select_lines", "args": {"forward": false} },
+    {
+        "keys": ["alt+z"],
+        "command": "toggle_setting",
+        "args": {"setting": "word_wrap"}
+    },
+    { "keys": ["shift+alt+down"], "command": "select_lines", "args": {"forward": true} }
+]
+
+
+ctrl+fn+arrow_left_right - совсем в низ в верх
+ctrl+fn+arrow_down_up - переключение по вкладкам
 

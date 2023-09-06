@@ -1,0 +1,7 @@
+pip install Flask
+
+app.py
+
+python app.py
+
+ http://localhost:5000/ 
