@@ -1,0 +1,44 @@
+tft lcd monitor
+	Chocolatey
+	Clonezilla
+	Windows Deployment Services 
+	Microsoft Deployment Toolkit
+	macrium reflect
+	Acronis
+		create image
+
+	1. Готуемо флешку:
+		створюемо завантажувальну флешку з оф дистрибутивом
+
+	2. sysprep
+		C:\Windows\System32\Sysprep\Sysprep.exe
+		http://pro-computer.pp.ua/6771-stvorennya-vlasnogo-nalashtovanogo-distributiva-windows-10.html
+		OOBE
+		перезавантаження
+			буде скопійовані утиліти та программи
+
+	3. Створення образу:
+		вантажимося зі створенної флешки
+		у вікні інсталяції вин10
+			shift 10
+				термінал
+				Diskpart
+				lisvol
+				exit
+				Dism /Capture-Image /ImageFile:I:\install.esd /CaptureDir:C:\ /Name:Windows
+		образ зявиться на флешці
+	4. Редагування:
+		кладемо оф дитрибутив на флешку з образом
+		образ кладемо в директорію sources у дистрибутиві з заміною
+			install.esd
+			вставляемо з заміною
+	5. Windows ADK 
+		windows kits
+		среда средств развертиванія
+			Oscdimg /u2 /m /bootdata:2#p0,e,bI:\10\boot\Etfsboot.com#pef,e,bI:\10\efi\microsoft\boot\Efisys.bin I:\10 I:\Windows.iso
+		тепер у нас на флешці 
+			директория з дистрибутивом
+			образ з программами
+			файл-образ дистрибутиву Windows.iso
+	6. Створення завантажувального носія з оф віндою на программами:
+		наприклад руфусом
