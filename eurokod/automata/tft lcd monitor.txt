@@ -7,12 +7,22 @@ tft lcd monitor
 	Acronis
 		create image
 
-	1. Готуемо флешку:
+Запуск установки операционной системы с установочного диска и вход в режим аудита.
+Установка приложений и настройка системы.
+	0. Готуемо флешку:
 		створюемо завантажувальну флешку з оф дистрибутивом
 
-	2. sysprep
+	1. Ставим вирт бокс 
+		создаем машину вин10
+		Загружаем виртуальную машину с ISO-образа Windows 10 и как обычно устанавливаем ОС на виртуалку.
+		В конечной фазе установки ОС, жмём клавиатурное сочетание Ctrl+Shift+F3. Операционная система переходит в режим аудита.
+		Устанавливаем все программы но не запускаем
+
+	2. Подготовка системы с помощью утилиты sysprep.
 		C:\Windows\System32\Sysprep\Sysprep.exe
 		http://pro-computer.pp.ua/6771-stvorennya-vlasnogo-nalashtovanogo-distributiva-windows-10.html
+		https://remontcompa.ru/windows/windows-10/1508-sozdanie-distributiva-windows-10-s-predustanovlennym-programmnym-obespecheniem.html
+
 		OOBE
 		перезавантаження
 			буде скопійовані утиліти та программи
@@ -21,24 +31,49 @@ tft lcd monitor
 		вантажимося зі створенної флешки
 		у вікні інсталяції вин10
 			shift 10
+
+Подключаем флешку к пк - к виртбокс - устройства юсб
+
 				термінал
-				Diskpart
-				lisvol
-				exit
-				Dism /Capture-Image /ImageFile:I:\install.esd /CaptureDir:C:\ /Name:Windows
+					diskpart
+						lis vol
+							данной командой выводим список разделов жёсткого диска
+
+						exit
+
+Dism /Capture-Image /ImageFile:I:\install.esd /CaptureDir:C:\ /Name:Windows
+
+Dism /Capture-Image /ImageFile:F:\install.esd /CaptureDir:C:\ /Name:Windows /compress:max
+
 		образ зявиться на флешці
+		вирубаем віртбокс
+
 	4. Редагування:
-		кладемо оф дитрибутив на флешку з образом
-		образ кладемо в директорію sources у дистрибутиві з заміною
+		кладемо файли оф дитрибутива на флешку з образом
+		 кладемо в директорію sources у дистрибутиві із заміною
 			install.esd
 			вставляемо з заміною
+
+Нам осталось превратить папку 10 с файлами Windows 10 в установочный ISO-дистрибутив с предустановленным программным обеспечением.
+
 	5. Windows ADK 
+https://developer.microsoft.com/ru-ru/windows/hardware/windows-assessment-deployment-kit
 		windows kits
 		среда средств развертиванія
-			Oscdimg /u2 /m /bootdata:2#p0,e,bI:\10\boot\Etfsboot.com#pef,e,bI:\10\efi\microsoft\boot\Efisys.bin I:\10 I:\Windows.iso
+Oscdimg /u2 /m /bootdata:2#p0,e,bI:\10\boot\Etfsboot.com#pef,e,bI:\10\efi\microsoft\boot\Efisys.bin I:\10 I:\Windows.iso
+
+Oscdimg /u2 /m /bootdata:2#p0,e,bK:\10\boot\Etfsboot.com#pef,e,bK:\10\efi\microsoft\boot\Efisys.bin K:\10 K:\Windows.iso
+
+u2, это файловая система UDF, а m - размер образа без ограничений. 
+b - загрузочный сектор записать etfsboot.com, путь к файлу etfsboot.com при указании b(boot) пишется без пробела bI:\10\boot\etfsboot.com
+bK: - где K: - буква диска.
+K:\10 - создать ISO-образ из файлов и папок, находящихся на разделе K: в папке 10
+K:\Windows.iso - созданный образ Win 10 разместить на разделе K:.
+
 		тепер у нас на флешці 
 			директория з дистрибутивом
 			образ з программами
 			файл-образ дистрибутиву Windows.iso
+			
 	6. Створення завантажувального носія з оф віндою на программами:
 		наприклад руфусом
