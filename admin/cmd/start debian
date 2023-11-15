@@ -1,0 +1,18 @@
+start debian
+
+lsblk
+
+sudo fdisk /dev/sdb
+	d
+		удалить разделы повторяя цикл
+	n
+		создать новый раздел
+		p
+	w
+		сохранить и вийти
+	lsblk -f
+		файловая система
+	sudo mkfs -t ext4 /dev/sdb1
+		форматнуть
+	#создать установочную флешку
+		sudo dd bs=4M if=/home/r_/Downloads/debian-12.2.0-amd64-DVD-1.iso of=/dev/sdb1 status=progress oflag=sync

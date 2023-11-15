@@ -1,1 +1,3 @@
 как узнать свою архитектуру?
+r_@debian:~/Downloads/r0_cod1$ uname -m
+x86_64
