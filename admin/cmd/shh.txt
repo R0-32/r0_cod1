@@ -6,3 +6,6 @@ ctrl+a ctrl+c
 ctrl+v
 
 git remote set-url origin git@github.com:RomanBoreyko/r0_cod1.git
+
+git remote set-url origin 
+git@github.com:RomanBoreyko/r_note.git
