@@ -59,8 +59,9 @@
 	#нода и реакт
 		sudo apt install build-essential
 		sudo apt install curl
-		curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 		sudo apt-get install -y nodejs
+
+		curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 		sudo npm install -g create-react-app
 		create-react-app reactapp
 		npx create-react-app shader-project
@@ -92,6 +93,7 @@
 
 	# шпоры
 		curl cht.sh/<язык>/:list
+
 		curl -s https://cht.sh/:cht.sh | sudo tee /usr/local/bin/cht.sh && sudo chmod +x /usr/local/bin/cht.sh
 		sudo apt install rlwrap
 
