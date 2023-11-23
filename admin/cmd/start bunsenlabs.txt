@@ -106,6 +106,7 @@
 
 How to change lang?
 	setxkbmap ru
+	setxkbmap us
 
 	#or
 		sudo dpkg-reconfigure keyboard-configuration
@@ -168,7 +169,7 @@ How to change lang?
 # ssh + git
 	#перевод ветки репа на ssh адресс вместо https который требует токен
 		git remote remove origin
-		git remote add origin git@github.com:R0-32/conspect.git
+		git remote add origin git@github.com:R0-32/название репа.git
 		git remote -v
 	#создание ssh ключа и привязывание его к гитхабу
 		ssh-keygen -t rsa -b 4096 -C "wodrom@gmail.com"
@@ -178,6 +179,8 @@ How to change lang?
 		git config --global user.name "R0-32"
 		git config --global user.email "wodrom@gmail.com"
 		git config --global core.sshCommand "ssh -i ~/.ssh/id_rsa"
+
+
 
 # алиас + гит
 	~/.gitconfig или git config --global --edit

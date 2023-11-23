@@ -7,5 +7,5 @@ ctrl+a ctrl+c
 на странице "SSH and GPG keys" в настройках вашего аккаунта GitHub.
 ctrl+v
 
-git remote set-url origin git@github.com:RomanBoreyko/r0_cod1.git
+git remote set-url origin git@github.com:RomanBoreyko/ваш-репозиторий.git
 
