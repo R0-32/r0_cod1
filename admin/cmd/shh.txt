@@ -7,6 +7,7 @@ ctrl+v
 
 git remote set-url origin git@github.com:RomanBoreyko/r0_cod1.git
 git remote set-url origin git@github.com:RomanBoreyko/r_note.git
+git remote set-url origin git@github.com:RomanBoreyko/r_note.git
 
 bor@bor-lubuntu:~/.ssh$ ls
 id_rsa  id_rsa.pub  known_hosts  known_hosts.old
@@ -15,3 +16,5 @@ known_hosts
 SHA256:ZlqbxkH1h+jt0SwQLlBFK6UdeVEe7iohX5PDPK3A4/o
 
 touch authorized_keys
+
+
