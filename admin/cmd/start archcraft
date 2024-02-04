@@ -26,10 +26,9 @@ git remote set-url origin git@github.com:RomanBoreyko/r-note.git
 
 в директории r_cod1
 git remote set-url origin git@github.com:RomanBoreyko/r0_cod1.git
-
     git config --global user.name "RomanBoreyko"
     git config --global user.email "wodrom@gmail.com"
-    
+
 
 git config --global core.editor "codium --wait"
     =
