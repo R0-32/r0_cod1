@@ -1,0 +1,12 @@
+%
+O00099 (OSNOVA)
+
+M98 P5 (SH4UP) 
+M01 
+
+M98 P10 (PAZIKI) 
+
+G00 G53 Y0 Z0 
+M30 
+
+%
