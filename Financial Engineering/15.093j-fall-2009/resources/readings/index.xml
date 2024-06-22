@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Readings on MIT OpenCourseWare</title>
+    <link>/resources/readings/</link>
+    <description>Recent content in Readings on MIT OpenCourseWare</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/resources/readings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MIT15_093J_F09_sdp.pdf</title>
+      <link>/resources/mit15_093j_f09_sdp/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit15_093j_f09_sdp/data.json</guid>
+      <description>This resource contains information related to semi definite programming.</description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>/pages/readings/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/readings/data.json</guid>
+      <description>Assigned chapters are from the required textbook: Bertsimas, Dimitris, and John Tsitsiklis. Introduction to Linear Optimization. Belmont, MA: Athena Scientific, 1997. ISBN: 9781886529199.
+LEC # TOPICS READINGS 1 Applications of linear optimization Chapter 1 2 Geometry of linear optimization Chapter 2 3-4 Simplex method Chapter 3 5-6 Duality theory Chapter 4 7 Sensitivity analysis Chapter 5 8 Robust optimization 9 Large scale optimization Chapter 6 10-11 Network flows Chapter 7 12 Applications of discrete optimization Chapter 10 13-16 Branch and bound and cutting planes</description>
+    </item>
+    
+  </channel>
+</rss>

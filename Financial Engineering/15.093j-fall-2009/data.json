@@ -1,0 +1,21 @@
+{
+  "course_title":"Optimization Methods",
+  "course_description":"This course introduces the principal algorithms for linear, network, discrete, nonlinear, dynamic optimization and optimal control. Emphasis is on methodology and the underlying mathematical structures. Topics include the simplex method, network flow methods, branch and bound and cutting plane methods for discrete optimization, optimality conditions for nonlinear optimization, interior point methods for convex optimization, Newton's method, heuristic methods, and dynamic programming and optimal control methods.\n",
+  "course_description_html":"This course introduces the principal algorithms for linear, network, discrete, nonlinear, dynamic optimization and optimal control. Emphasis is on methodology and the underlying mathematical structures. Topics include the simplex method, network flow methods, branch and bound and cutting plane methods for discrete optimization, optimality conditions for nonlinear optimization, interior point methods for convex optimization, Newton&rsquo;s method, heuristic methods, and dynamic programming and optimal control methods.",
+  "site_uid":"57c7e4f2-1b3b-4477-b8fc-6893f8483776",
+  "legacy_uid":"e31aa840-ec78-567c-6e1e-bf3ac09e6b53","instructors": [{
+    "first_name":"Dimitris",
+    "last_name":"Bertsimas",
+    "middle_initial":"",
+    "salutation":"Prof.",
+    "title":"Prof. Dimitris Bertsimas"}],"department_numbers":["15","6"],
+  "learning_resource_types":["Problem Sets","Exams","Lecture Notes"],
+  "topics":[["Engineering","Systems Engineering","Systems Optimization"],["Mathematics","Applied Mathematics"]],
+  "primary_course_number":"15.093J",
+  "extra_course_numbers":"6.255J",
+  "term":"Fall",
+  "year":"2009",
+  "level":["Graduate"],
+  "image_src":"./static_resources/2022291bbe6e5f1f39abd0b90ff17406_15-093jf09.JPG",
+  "course_image_metadata":{"content_type":"resource","description":"This course covers various techniques and algorithms for network optimization. (Image by Prof. Dimitris Bertsimas.)\r\n","draft":false,"file":"/courses/15-093j-optimization-methods-fall-2009/2022291bbe6e5f1f39abd0b90ff17406_15-093jf09.JPG","file_size":28933,"file_type":"image/jpeg","image_metadata":{"caption":"This course covers various techniques and algorithms for network optimization. (Image by Prof. Dimitris Bertsimas.)","credit":"","image-alt":"Diagram of nodes and paths in a network."},"iscjklanguage":false,"learning_resource_types":[],"license":"https://creativecommons.org/licenses/by-nc-sa/4.0/","ocw_type":"OCWImage","resourcetype":"Image","title":"15-093jf09JPG","uid":"2022291b-be6e-5f1f-39ab-d0b90ff17406","video_files":{"video_thumbnail_file":null},"video_metadata":{"youtube_id":null}}}
+

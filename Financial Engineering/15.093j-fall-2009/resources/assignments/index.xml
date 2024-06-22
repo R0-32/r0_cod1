@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assignments on MIT OpenCourseWare</title>
+    <link>/resources/assignments/</link>
+    <description>Recent content in Assignments on MIT OpenCourseWare</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/resources/assignments/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assignments</title>
+      <link>/pages/assignments/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/assignments/data.json</guid>
+      <description> ASSN # FILES 1 (PDF) 2 (PDF)
+Data (TXT) 3 (PDF) 4 (PDF) 5 (PDF) 6 (PDF) 7 (PDF) 8 (PDF) </description>
+    </item>
+    
+    <item>
+      <title>data.txt</title>
+      <link>/resources/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/data.json</guid>
+      <description>This resource is helpful for assignments.</description>
+    </item>
+    
+    <item>
+      <title>MIT15_093J_F09_assn01.pdf</title>
+      <link>/resources/mit15_093j_f09_assn01/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit15_093j_f09_assn01/data.json</guid>
+      <description>This resource contains problem statements related to optimization methods.</description>
+    </item>
+    
+    <item>
+      <title>MIT15_093J_F09_assn02.pdf</title>
+      <link>/resources/mit15_093j_f09_assn02/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit15_093j_f09_assn02/data.json</guid>
+      <description>This resource contains problem statements related to APML/CPLEX and capacity expansion.</description>
+    </item>
+    
+    <item>
+      <title>MIT15_093J_F09_assn03.pdf</title>
+      <link>/resources/mit15_093j_f09_assn03/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit15_093j_f09_assn03/data.json</guid>
+      <description>This resource contains problem statements related to AMPL/CPLEX for the computational part.</description>
+    </item>
+    
+    <item>
+      <title>MIT15_093J_F09_assn04.pdf</title>
+      <link>/resources/mit15_093j_f09_assn04/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit15_093j_f09_assn04/data.json</guid>
+      <description>This resource contains problem statements related to optimization methods.</description>
+    </item>
+    
+    <item>
+      <title>MIT15_093J_F09_assn05.pdf</title>
+      <link>/resources/mit15_093j_f09_assn05/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit15_093j_f09_assn05/data.json</guid>
+      <description>This resource contains practice problems related to network flows.</description>
+    </item>
+    
+    <item>
+      <title>MIT15_093J_F09_assn06.pdf</title>
+      <link>/resources/mit15_093j_f09_assn06/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit15_093j_f09_assn06/data.json</guid>
+      <description>This resource contains problem statements related to optimization methods.</description>
+    </item>
+    
+    <item>
+      <title>MIT15_093J_F09_assn07.pdf</title>
+      <link>/resources/mit15_093j_f09_assn07/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit15_093j_f09_assn07/data.json</guid>
+      <description>This resource contains problem statements related to performance of different algorithms, dynamic programming, diffraction law, convex and concave functions.</description>
+    </item>
+    
+    <item>
+      <title>MIT15_093J_F09_assn08.pdf</title>
+      <link>/resources/mit15_093j_f09_assn08/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit15_093j_f09_assn08/data.json</guid>
+      <description>This resource contains problem statements related to MATLAB.</description>
+    </item>
+    
+  </channel>
+</rss>
