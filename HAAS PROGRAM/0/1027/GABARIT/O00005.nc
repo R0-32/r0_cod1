@@ -1,0 +1,10 @@
+%
+O00005 (Info 1)
+
+(PODKLADKI 10mm) 
+(X0 - SEREDINA) 
+(Y0 - NEPODVIZHNAYA GUBKA) 
+(Z0 - OT PODKLADOK +46. mm) 
+
+
+%
